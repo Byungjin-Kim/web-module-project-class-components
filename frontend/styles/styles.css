@@ -15,18 +15,23 @@ body::after {
   z-index: -1;
 }
 
-body, input, button {
+body,
+input,
+button {
   font-family: 'Titillium Web', sans-serif;
   color: #484848;
 }
 
-#root, #wrapper {
+#root,
+#wrapper {
   display: flex;
   flex-direction: column;
   align-items: center;
 }
 
-h1, h2, h3 {
+h1,
+h2,
+h3 {
   color: #93005a;
 
 }
@@ -72,7 +77,8 @@ nav a.active {
   margin: 0 0 1rem 0;
 }
 
-ul, form {
+ul,
+form {
   margin: 1rem 0 1rem 0;
 }
 
@@ -82,4 +88,31 @@ ul, form {
 
 .todo:hover {
   cursor: pointer;
+}
+
+.checkmark {
+  display: inline-block;
+  width: 20px;
+  height: 20px;
+  -ms-transform: rotate(45deg);
+  -webkit-transform: rotate(45deg);
+  transform: rotate(45deg);
+}
+
+.checkmark_stem {
+  position: absolute;
+  width: 2px;
+  height: 9px;
+  background-color: rgb(64, 143, 46);
+  left: 11px;
+  top: 6px;
+}
+
+.checkmark_kick {
+  position: absolute;
+  width: 3px;
+  height: 3px;
+  background-color: rgb(64, 143, 46);
+  left: 8px;
+  top: 12px;
 }
